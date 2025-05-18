@@ -2,7 +2,11 @@
 
 **AuraOS is a next-generation, open-source robotics application framework and development ecosystem, engineered from the ground up to empower the creation of sophisticated, reliable, and intelligent autonomous robots.** It aims to provide an unparalleled developer experience, blending high performance and safety with intuitive tools and a cohesive, extensible architecture.
 
-[![License: Apache-2.0 OR MIT](https://img.shields.io/badge/License-Apache--2.0%20OR%20MIT-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+## License
+
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://opensource.org/licenses/GPL-3.0)
 
 **Current Status: Conceptual Stage / Early Sketch**  
 This project is currently in its initial conceptual and early sketching phase. The code provided is a simplified illustration of the core ideas and is not yet suitable for production use. We welcome discussion, ideas, and future contributions!
@@ -189,7 +193,7 @@ AuraOS aims to evolve into a universal system that surpasses existing frameworks
 
 We are excited about the potential of AuraOS and welcome community involvement! As this project is in its early stages, contributions can take many forms:
 
-*   **Discussions:** Share your ideas, feedback, and use cases in the [Issues](https://github.com/YOUR_USERNAME/aura-os/issues) section or our [Discussions](https://github.com/YOUR_USERNAME/aura-os/discussions) tab.
+*   **Discussions:** Share your ideas, feedback, and use cases in the [Issues](https://github.com/NotNowNotYetYouKnow/aura-os/issues) section or our [Discussions](https://github.com/NotNowNotYetYouKnow/aura-os/discussions) tab.
 *   **Conceptual Design:** Help refine the architectural vision and design principles.
 *   **Prototyping:** Experiment with implementing core features or alternative approaches.
 *   **Documentation:** Improving this README or drafting more detailed design documents.
@@ -203,7 +207,5 @@ Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for more details on how to co
 AuraOS is dual-licensed under :
 
 *   GNU GPL
-
-at your option.
 
 --- 

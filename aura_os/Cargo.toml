@@ -1,0 +1,21 @@
+[workspace]
+# Defines the members (crates) of this workspace.
+# Each listed path should contain its own Cargo.toml file.
+members = [
+    "aura_core",
+    "aura_examples",
+]
+
+# Specifies the feature resolver version.
+# Version "2" enables new features and behaviors in Cargo's dependency resolution,
+# generally recommended for new projects.
+resolver = "2"
+
+# [workspace.dependencies]
+# This section could be used to define common dependencies shared across
+# multiple crates in the workspace to ensure consistent versions.
+# For this initial sketch, we don't have common dependencies defined here,
+# but it's a good place for them as the project grows.
+# Example:
+# serde = { version = "1.0", features = ["derive"] }
+# tokio = { version = "1", features = ["full"] }

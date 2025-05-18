@@ -1,0 +1,57 @@
+[package]
+# The name of the crate. This is used by Cargo and when other crates depend on it.
+name = "aura_core"
+
+# The version of the crate, following Semantic Versioning (SemVer).
+# Start with 0.x.y for initial development.
+version = "0.0.1"
+
+# The Rust edition to use. "2021" is the latest stable edition as of now,
+# enabling the latest language features and idioms.
+edition = "2021"
+
+# Optional metadata.
+authors = ["AuraOS Visionaries <vision@auraos.dev>"]
+description = "Core libraries and runtime for the AuraOS robotics framework."
+license = "Apache-2.0 OR MIT" # Dual-licensing is common for broad adoption.
+repository = "https://github.com/NotNowNotYetYouKnow/aura_os" # Replace with your actual repo URL
+readme = "README.md" # Points to a README file for this crate (optional for now)
+keywords = ["robotics", "framework", "os", "aura"] # Helps with discoverability if published
+categories = ["science::robotics", "embedded", "os"] # Crate categories if published
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# For this conceptual sketch, we'll keep direct dependencies minimal to focus on structure.
+# As AuraOS evolves, this section will grow significantly.
+#
+# Examples of what might be added later:
+#
+# For serialization/deserialization of messages:
+# serde = { version = "1.0", features = ["derive"] }
+# bincode = "1.3" # Or other formats like prost for Protocol Buffers
+#
+# For asynchronous operations (crucial for robotics):
+# tokio = { version = "1", features = ["full"] } # Or async-std
+#
+# For logging:
+# log = "0.4"
+# tracing = "0.1"
+#
+# For generating unique IDs:
+# uuid = { version = "1", features = ["v4"] }
+#
+# For more advanced concurrency primitives beyond std::sync:
+# crossbeam = "0.8"
+#
+# For easily creating static, lazily-initialized global variables (like our MESSAGE_BUS):
+lazy_static = "1.4.0"
+
+# When you define dependencies in `[workspace.dependencies]` in the root Cargo.toml,
+# you can depend on them here like this to inherit the workspace version:
+# serde.workspace = true
+# tokio.workspace = true
+
+[dev-dependencies]
+# Dependencies used only for tests and examples within this crate.
+# For now, we don't have specific dev-dependencies for aura_core itself.

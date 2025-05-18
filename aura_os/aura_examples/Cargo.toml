@@ -1,0 +1,37 @@
+
+[package]
+name = "aura_examples"
+version = "0.0.1"
+edition = "2021"
+authors = ["AuraOS Visionaries <vision@auraos.dev>"]
+description = "Example applications demonstrating the use of the AuraOS core framework."
+license = "Apache-2.0 OR MIT"
+publish = false # Examples are typically not published to crates.io
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# This crate depends on `aura_core` to use its functionalities.
+# The `path` key tells Cargo to look for `aura_core` in the parent directory.
+aura_core = { path = "../aura_core" }
+ctrlc = "3.2"
+
+# We don't need an explicit dependency for `std::thread` or `std::time::Duration`
+# as they are part of the Rust standard library.
+
+# If examples needed other specific crates not used by aura_core,
+# they would be listed here. For example:
+# rand = "0.8" # If an example needed random number generation
+
+# [[bin]] sections are not strictly necessary if your executable files are in src/bin/
+# or if you only have one in src/main.rs.
+# However, if you have multiple executables directly in src/ (like we will),
+# explicitly defining them is good practice and gives you more control.
+
+[[bin]]
+name = "aura_talker_example" # The name of the executable binary
+path = "src/talker.rs"      # The path to its main source file
+
+[[bin]]
+name = "aura_listener_example"
+path = "src/listener.rs"

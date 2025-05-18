@@ -140,10 +140,18 @@ Built-in considerations for building dependable and secure robotic systems.
 
 ### Project Structure
 The AuraOS sketch is organized as a Rust workspace:
-```
-aura_os/
-├── Cargo.toml
-...
+```toml
+[workspace]
+members = [
+    "aura_core",
+    "aura_examples",
+]
+
+resolver = "2" # Use the new feature resolver
+
+[workspace.dependencies]
+# Common dependencies could go here if needed by multiple crates
+# e.g., serde for serialization, tokio for async (though we'll keep it sync for simplicity here)
 ```
 
 ### Building and Running Examples
@@ -193,7 +201,7 @@ AuraOS aims to evolve into a universal system that surpasses existing frameworks
 
 We are excited about the potential of AuraOS and welcome community involvement! As this project is in its early stages, contributions can take many forms:
 
-*   **Discussions:** Share your ideas, feedback, and use cases in the [Issues](https://github.com/NotNowNotYetYouKnow/aura-os/issues) section or our [Discussions](https://github.com/NotNowNotYetYouKnow/aura-os/discussions) tab.
+*   **Discussions:** Share your ideas, feedback, and use cases in the [Issues](https://github.com/NotNowNotYetYouKnow/aura-os/issues) section.
 *   **Conceptual Design:** Help refine the architectural vision and design principles.
 *   **Prototyping:** Experiment with implementing core features or alternative approaches.
 *   **Documentation:** Improving this README or drafting more detailed design documents.
@@ -201,11 +209,3 @@ We are excited about the potential of AuraOS and welcome community involvement! 
 Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for more details on how to contribute. We aim to foster an open, welcoming, and collaborative community. All contributors are expected to adhere to our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ---
-
-## License
-
-AuraOS is dual-licensed under :
-
-*   GNU GPL
-
---- 

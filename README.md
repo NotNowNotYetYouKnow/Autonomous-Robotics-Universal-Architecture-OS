@@ -1,5 +1,3 @@
----
-
 # AuraOS: The Autonomous Robotics Universal Architecture OS
 
 **AuraOS is a next-generation, open-source robotics application framework and development ecosystem, engineered from the ground up to empower the creation of sophisticated, reliable, and intelligent autonomous robots.** It aims to provide an unparalleled developer experience, blending high performance and safety with intuitive tools and a cohesive, extensible architecture.

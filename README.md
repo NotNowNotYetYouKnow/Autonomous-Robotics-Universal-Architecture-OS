@@ -187,7 +187,7 @@ This initial sketch lays the groundwork. A complete AuraOS would include:
 
 We are excited about the potential of AuraOS and welcome community involvement! As this project is in its early stages, contributions can take many forms:
 
-* **Discussions:** Share your ideas, feedback, and use cases in the [Issues](https://github.com/YOUR_USERNAME/aura-os/issues) section or our [Discussions](https://github.com/YOUR_USERNAME/aura-os/discussions) tab.
+* **Discussions:** Share your ideas, feedback, and use cases in the [Issues](https://github.com/YOUR_USERNAME/aura-os/issues).
 * **Conceptual Design:** Help refine the architectural vision and design principles.
 * **Prototyping:** Experiment with implementing core features or alternative approaches.
 * **Documentation:** Improving this README or drafting more detailed design documents.
